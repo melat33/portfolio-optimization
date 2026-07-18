@@ -1,0 +1,74 @@
+:root {
+  --bg: #0a1420;
+  --bg-raised: #0e1a2b;
+  --panel: #101d30;
+  --panel-2: #14233a;
+  --border: #1f3149;
+  --border-soft: #182740;
+
+  --gold: #e0b04c;
+  --gold-dim: #a3823f;
+  --teal: #3fb8af;
+  --teal-dim: #2d8781;
+  --blue: #5b8def;
+  --blue-dim: #4269ad;
+
+  --text: #dbe2ee;
+  --text-dim: #8b9ab3;
+  --text-faint: #526080;
+
+  --positive: #4fd08a;
+  --negative: #ef6a6a;
+
+  --display: "Fraunces", "Iowan Old Style", serif;
+  --body: "IBM Plex Sans", -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius: 3px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { min-height: 100vh; }
+
+::selection { background: var(--gold); color: #0a1420; }
+
+a { color: inherit; }
+
+.mono { font-family: var(--mono); }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
