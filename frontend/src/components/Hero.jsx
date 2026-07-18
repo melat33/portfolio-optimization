@@ -12,12 +12,12 @@ export default function Hero() {
       <div className="hero-inner">
         <div className="eyebrow hero-eyebrow">GMF Investments · Quantitative Research Memo</div>
         <h1 className="hero-title">
-          A forecast-informed portfolio,<br />
+          A forecast informed portfolio,<br />
           <em>tested against the market</em>
         </h1>
         <p className="hero-sub">
-          Five stages of analysis — data to decision — for a three-asset portfolio spanning
-          high-growth equity (TSLA), fixed income (BND), and broad market exposure (SPY).
+          Five stages of analysis  data to decision  for a three asset portfolio spanning
+          high growth equity (TSLA), fixed income (BND), and broad market exposure (SPY).
           ARIMA and LSTM forecasts feed a Modern Portfolio Theory allocation, backtested against
           a static 60/40 benchmark over the trailing year.
         </p>
